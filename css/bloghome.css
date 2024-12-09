@@ -67,3 +67,6 @@
   font-size: 14px;
   font-weight: 400;
 }
+.blog-item:hover {
+  cursor: pointer;
+}
