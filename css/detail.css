@@ -54,6 +54,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  transition: all 0.5s ease;
 }
 .slide-thumb-list:hover {
   cursor: pointer;
@@ -66,6 +67,9 @@
   justify-content: center;
   align-items: center;
   border: 1px solid #e5e5e5;
+}
+.slide-thumb-item.active {
+  border: 1px solid #5a5959;
 }
 .slide-thumb-item img {
   width: 76px;
@@ -81,6 +85,7 @@
 .image-product-list {
   display: flex;
   justify-content: space-between;
+  transition: all 0.5s ease;
 }
 .image-product-item {
   width: 478px;
@@ -129,4 +134,156 @@
 .product-detail-right {
   width: 625px;
   height: 480px;
+}
+.product-info-buy {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+.info-buy-title {
+  color: #525252;
+  font-weight: 600;
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+.info-brand {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 25px;
+}
+.info-brand img {
+  margin-right: 10px;
+}
+.info-brand-1 {
+  margin-right: 10px;
+  font-size: 14px;
+  font-weight: 400;
+  color: rgb(127, 127, 127);
+}
+.info-brand-1 span {
+  color: rgb(12, 151, 251);
+  font-weight: 600;
+}
+.info-brand-1 span:hover {
+  cursor: pointer;
+}
+.info-brand-2 {
+  font-size: 14px;
+  font-weight: 400;
+  color: rgb(127, 127, 127);
+}
+.info-brand-2 span {
+  font-size: 14px;
+  font-weight: 400;
+  color: rgb(82, 82, 82);
+}
+.info-sale {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 15px;
+  padding-bottom: 25px;
+  align-items: center;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+.info-sale-price {
+  color: #ff8c82;
+  font-weight: 700;
+  font-size: 26px;
+  margin-right: 10px;
+}
+.info-original-price {
+  color: #919191;
+  font-size: 14px;
+  font-weight: 400;
+  text-decoration: line-through;
+  margin-right: 10px;
+}
+.info-sale-percent {
+  background-color: #fae690;
+  padding: 2px 4px;
+  font-size: 12px;
+}
+.count {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 15px;
+  align-items: center;
+  padding-top: 10px;
+}
+.count-text {
+  color: #525252;
+  font-size: 16px;
+  font-weight: 400;
+  margin-right: 20px;
+}
+.count-number {
+  display: flex;
+  justify-content: flex-start;
+  height: 50px;
+}
+.count-number button {
+  border: 1px solid #eee;
+  background-color: #fff;
+  color: 525252;
+  width: 50px;
+  height: 50px;
+  font-size: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.count-number:hover button {
+  cursor: pointer;
+}
+.count-number input {
+  width: 70px;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+  border-left: none;
+  border-right: none;
+  text-align: center;
+  margin: 0;
+  outline: none;
+}
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+.store {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  align-items: center;
+}
+.store i {
+  margin-right: 10px;
+  color: #aaa;
+}
+.count-store {
+  margin-right: 5px;
+  color: #ff8c82 !important;
+}
+.store span {
+  font-size: 16px;
+  font-weight: 400;
+  color: #525252;
+}
+.card-store {
+  margin-top: 15px;
+}
+.card-store button {
+  background-color: #525252;
+  width: 100%;
+  height: 50px;
+  border: none;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 400;
+  transition: all 0.25s ease;
+}
+.card-store button i {
+  margin-right: 15px;
+}
+.card-store:hover button {
+  background-color: #ff8c82;
+  cursor: pointer;
 }
