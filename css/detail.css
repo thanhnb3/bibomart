@@ -1,0 +1,132 @@
+.detail-product-wrap {
+  width: 100%;
+  background-color: #fff;
+}
+.title-detail {
+  width: 1250px;
+  margin: 0 auto;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+.title-detail .title-detail-home {
+  color: #919191;
+  font-size: 14px;
+  font-weight: 400;
+  margin-right: 10px;
+}
+.title-detail .title-detail-home:hover {
+  cursor: pointer;
+}
+.title-detail i {
+  color: #919191;
+  font-size: 14px;
+  margin-right: 10px;
+}
+.title-detail .title-detail-name {
+  font-size: 14px;
+  font-weight: bolder;
+  color: #919191;
+}
+.product-detail {
+  width: 1250px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+.product-detail-left {
+  width: 625px;
+  padding-left: 10px;
+  padding-right: 10px;
+  box-sizing: border-box;
+  height: 480px;
+  display: flex;
+  justify-content: space-between;
+}
+.slide-thumb-wrap {
+  width: 100px;
+  position: relative;
+  overflow: hidden;
+}
+.slide-thumb-list {
+  width: 80px;
+  height: 530px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.slide-thumb-list:hover {
+  cursor: pointer;
+}
+.slide-thumb-item {
+  width: 80px;
+  height: 80px;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #e5e5e5;
+}
+.slide-thumb-item img {
+  width: 76px;
+  height: 76px;
+  object-fit: cover;
+  object-position: center;
+}
+.image-wrap {
+  width: 478px;
+  position: relative;
+  overflow: hidden;
+}
+.image-product-list {
+  display: flex;
+  justify-content: space-between;
+}
+.image-product-item {
+  width: 478px;
+  height: 478px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.image-product-item img {
+  width: 478px;
+  height: 478px;
+}
+.image-button {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 33px;
+  background-color: #ffbd82;
+  border: none;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  padding: 6px 10px;
+  box-sizing: border-box;
+  font-size: 14px;
+  font-weight: 500;
+}
+.image-button button {
+  border: none;
+}
+.expand {
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+  font-size: 30px;
+  color: #aaaaaa;
+  transition: all 0.1s ease;
+}
+.expand:hover {
+  color: rgb(120, 167, 207);
+  transform: scale(1.1);
+  cursor: pointer;
+}
+.product-detail-right {
+  width: 625px;
+  height: 480px;
+}
