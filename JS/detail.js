@@ -122,50 +122,6 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 });
 
-/*
-document.addEventListener("DOMContentLoaded", () => {
-  const sameList = document.querySelector(".same-product-list");
-  const sameItem = document.querySelectorAll(".same-product-item");
-  const nextSame = document.querySelector(".next-same button");
-  const prevSame = document.querySelector(".prev-same button");
-
-  const itemsToMove = 3; // Số item di chuyển mỗi lần
-  const totalItems = sameItem.length; // Tổng số item trong danh sách
-  const itemWidth = sameItem[0].offsetWidth + 17; // Độ rộng 1 item (bao gồm margin-right)
-  let currentIndex = 0; // Vị trí hiện tại
-
-  // Hàm cập nhật vị trí danh sách
-  function updatePosition() {
-    const moveDistance = currentIndex * itemWidth;
-    sameList.style.transform = `translateX(-${moveDistance}px)`;
-    sameList.style.transition = "transform 0.5s ease";
-  }
-
-  // Xử lý khi nhấn Next
-  nextSame.onclick = () => {
-    currentIndex += itemsToMove; // Di chuyển thêm 3 item
-    if (currentIndex >= totalItems) {
-      // Nếu vượt quá tổng số item, quay lại đầu (vòng tròn)
-      currentIndex = currentIndex % totalItems;
-    }
-    updatePosition();
-  };
-
-  // Xử lý khi nhấn Prev
-  prevSame.onclick = () => {
-    currentIndex -= itemsToMove; // Lùi lại 3 item
-    if (currentIndex < 0) {
-      // Nếu nhỏ hơn 0, quay lại cuối (vòng tròn)
-      currentIndex = (totalItems + currentIndex) % totalItems;
-    }
-    updatePosition();
-  };
-
-  // Đảm bảo trạng thái ban đầu
-  updatePosition();
-});
-*/
-
 // JS CONTENT INFO
 // tab title
 const tabTitle = document.querySelectorAll(".tab-content");
@@ -230,5 +186,32 @@ document.addEventListener("DOMContentLoaded", () => {
     }
     // Đổi trạng thái
     isExpanded = !isExpanded;
+  });
+});
+
+// JS GALLERY
+document.addEventListener("DOMContentLoaded", () => {
+  const publish = document.querySelector(".expand");
+  const close = document.querySelector(".close-gallery");
+  const gallery = document.querySelector(".gallery");
+
+  publish.addEventListener("click", () => {
+    gallery.classList.add("publish");
+  });
+
+  close.addEventListener("click", () => {
+    gallery.classList.remove("publish");
+  });
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+  const galleryThumb = document.querySelectorAll(".gallery-slide-thumb-item");
+  const galleryImage = document.querySelector(".gallery-image-list");
+
+  galleryThumb.forEach((thumb, index) => {
+    thumb.addEventListener("mouseover", () => {
+      const moveLeftImage = index * -1000;
+      galleryImage.style.transform = "translateX(" + moveLeftImage + "px)";
+    });
   });
 });
