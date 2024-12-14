@@ -584,6 +584,7 @@ input[type="number"]::-webkit-inner-spin-button {
   display: flex;
   align-items: center;
   justify-content: center;
+  pointer-events: none;
   opacity: 0;
   transition: 0.25s;
   z-index: 0;
@@ -591,6 +592,7 @@ input[type="number"]::-webkit-inner-spin-button {
 .gallery.publish {
   opacity: 1;
   z-index: 1000;
+  pointer-events: auto;
 }
 .gallery-slide-thumb-wrap {
   position: absolute;
